@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
   mount ActionCable.server => "/cable"
-  root to: "rooms#show"
+  root to: "rooms#index"
   devise_for :users, controllers: {
     registrations: "users/registrations",
     sessions: "users/sessions"
   }
   resources :users, only: [:show]
   resources :messages, only: [:create]
-  resources :rooms, only: [:show]
+  resources :rooms, only: [:new, :show, :create, :update]
 
   get "/show_additionally", to: "rooms#show_additionally"
 
