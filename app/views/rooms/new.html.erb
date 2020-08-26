@@ -1,0 +1,8 @@
+<h1>ルームを作成しよう</h1>
+
+<%= form_with model: @room, local: true do |f| %>
+  <%= f.label :name %><br />
+  <%= f.text_field :name %>
+
+  <%= f.submit "Room up"%>
+<% end %>
