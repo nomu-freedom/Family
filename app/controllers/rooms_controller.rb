@@ -6,6 +6,7 @@ class RoomsController < ApplicationController
 
   def new
     @room = Room.new
+    @room.users << current_user
   end
 
   def create
@@ -31,6 +32,6 @@ class RoomsController < ApplicationController
   private
 
     def room_params
-      params.require(:room).permit(:name)
+      params.require(:room).permit(:name).merge(user_ids: current_user.id)
     end
 end
