@@ -1,9 +1,9 @@
-<h1>Familyへようこそ</h1>
+<h1>家族を選択してください</h1>
 
-<div>
-  <ul>
+<div class="room_index_main">
+  <ul class="family_lists">
     <% @rooms.each do |room| %>
-      <li><%= link_to "ROOM#{room.id}", room_path(room) %></li>
+      <li class="family_list"><%= link_to "#{room.name}", room_path(room) %></li>
     <% end %>
   </ul>
 </div>

@@ -1,3 +1,46 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  text-align: center;
+  padding: 25px 0;
+}
+
+.room_index_main {
+  display: flex;
+  justify-content: center;
+}
+
+.family_lists {
+  width: 70vw;
+}
+
+.family_list {
+  font-size: 300vh 300vw;
+  list-style: none;
+  width: 45%;
+  height: 300px;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  float: left;
+  border-radius: 5%;
+  font-size: 18pt;
+  color: rgb(17, 0, 250);
+  padding: 12px 12px;
+  cursor: pointer;
+  background: rgb(5, 241, 163);
+  line-height: 1em;
+  transition: .3s;
+  box-shadow: 6px 6px 6px #666666;
+  border: 2px solid rgb(36, 141, 4);
+}
+
+.family_list:hover {
+  box-shadow: none;
+  color: #333;
+  background: #ffffff;
+}
