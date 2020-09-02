@@ -3,7 +3,7 @@
 <div class="room_index_main">
   <ul class="family_lists">
     <% @rooms.each do |room| %>
-      <li class="family_list"><%= link_to "#{room.name}", room_path(room) %></li>
+      <li class="family_list"><%= link_to "#{room.name}", rooms_path(room.id) %></li>
     <% end %>
   </ul>
 </div>
