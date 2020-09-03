@@ -50,6 +50,6 @@ test:
 production:
   <<: *default
   database: Family_production
-  username: Family
+  username: root
   password: <%= ENV['FAMILY_DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
