@@ -67,3 +67,8 @@ gem "devise-i18n-views"
 
 # Bootstrap
 gem 'devise-bootstrap-views', '~> 1.0'
+
+# unicornインストール
+group :production do
+  gem 'unicorn', '5.4.1'
+end
