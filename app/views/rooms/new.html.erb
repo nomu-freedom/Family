@@ -1,9 +1,19 @@
-<h1>家族を作成しよう</h1>
-
-<%= form_with model: @room, local: true do |f| %>
-  <%= f.label :name %><br />
-  <%= f.text_field :name %>
-  <%= f.submit "ルームの作成"%>
-
-<%= link_to "家族一覧", "/rooms/index" %>
-<% end %>
+<div class="rooms_new_main">
+  <div class="rooms_new_middle">
+  <h1 class="rooms_new_head">家族を作成しよう</h1>
+    <div class="rooms_new_form">
+      <div class="rooms_new_main_form">
+      <%= form_with model: @room, local: true do |f| %>
+        <p class="rooms_new_form_title">家族名を入力してください</p>
+        <%= f.label :name, class:"rooms_new_name_label"%><br />
+        <p><%= f.text_field :name, class:"rooms_new_text_field" %></p>
+        <p><%= f.submit "ルームの作成", class:"rooms_new_submit"%><p>
+      <% end %>
+      <div class="rooms_new_footer">
+      <p class="footer_string">------------　既存の家族に参加する方はこちら　------------</p>
+        <%= link_to "家族一覧", "/rooms", class:"rooms_new_link_button" %>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
