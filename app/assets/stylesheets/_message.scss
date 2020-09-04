@@ -1,6 +1,7 @@
 
 /* 全体の枠 */
-.message {
+#message-container {
+	height: 100vh;
 	background-color:rgb(113,147,193); /* LINEっぽい背景色 */
 	padding:1em;
 	overflow:auto;
