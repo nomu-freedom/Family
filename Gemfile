@@ -78,3 +78,7 @@ gem 'devise-bootstrap-views', '~> 1.0'
 group :production do
   gem 'unicorn', '5.4.1'
 end
+#Herokuように汗えとファイルのログと保存先を微調整
+group :production do
+  gem 'rails_12factor'
+end
