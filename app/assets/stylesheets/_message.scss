@@ -1,12 +1,12 @@
 
 /* 全体の枠 */
-#message-container {
-	height: 100vh;
-	background-color:rgb(113,147,193); /* LINEっぽい背景色 */
+.message {
+//	height: 100vh;
+//	background-color:rgb(113,147,193); /* LINEっぽい背景色 */
 	padding:1em;
-	overflow:auto;
+//	overflow:auto;
 }
-/* 左のトークボックス */
+/* 右のトークボックス */
 //.message .right_message:before { /* 左の丸アイコン */
 //	content:'';
 //	display:inline-block;
@@ -23,12 +23,12 @@
 	top:8px;
 	left:-20px;
 	border: 12px solid transparent;
-	border-right:12px solid white;
+	border-right:12px solid #85e249
 }
 .message .your_message_content { /* 左ふきだしの本体 */
 	display:inline-block;
 	position:relative;
-	background-color:white;
+	background-color:#85e249;
 	border-radius:10px;
 	padding:10px;
 	margin:0 0 0 10px;

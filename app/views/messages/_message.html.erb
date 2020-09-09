@@ -1,19 +1,10 @@
 <div class="message" id="message-<%= message.id %>">
-  <% if message.user_id == current_user.id %>
-    <div class="right_message">
-      <p class="my_message_name"><%= message.user.nickname %></p>
-      <div class="my_message_content">
+  <div class="left_message">
+    <div class="your_message">
+      <p class="your_message_name"><%= message.user.nickname %></p>
+      <div class="your_message_content">
         <%= simple_format(h message.content) %>
       </div>
     </div>
-  <% else message.user_id != current_user.id %>
-    <div class="left_message">
-      <div class="your_message">
-        <p class="your_message_name"><%= message.user.nickname %></p>
-        <div class="your_message_content">
-          <%= simple_format(h message.content) %>
-        </div>
-      </div>
-    </div>
-  <% end %>
+  </div>
 </div>
