@@ -3,12 +3,12 @@
 ## アプリケーション名
 ### Family
 
-## アプリケーションの概要（未実装）
-- 家族間でのコミュニケーションが取れ、家族の位置情報をGPSを用いてリアルタイムで確認できるアプリです
+## アプリケーションの概要（実装中）
+- 家族間でのコミュニケーションが取れるチャットアプリケーションです。
 
 ## URL
 - https://family-28237.herokuapp.com/
-## テスト用アカウント（未実装）
+## テスト用アカウント
 ### メッセージ送信者
 - メールアドレス:asd@123
 - パスワード:asd123
@@ -91,9 +91,22 @@
 - belongs_to :room
 - belongs_to :user
 
+### users テーブル
+
+| Column   | Type       | Options            |
+| -------- | ---------- | ------------------ |
+| room     | references | null: false        |
+| user     | references | null: false,       |
+
+#### Association
+
+- belongs_to :room
+- belongs_to :user
+
+
 ## ローカルでの動作方法
 
-### 「Ruby」「Ruby on rails」のバージョンの確認
+### 「Ruby」「Ruby on railsのバージョンの確認
 - Ruby 2.6.5
 - Rails 6.0.3.2
 
